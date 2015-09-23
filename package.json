@@ -1,0 +1,35 @@
+{
+  "name": "ltc-runtime-x5",
+  "version": "0.0.1",
+  "description": "ltc-rank for record rank info",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/builden/ltc-runtime-x5.git"
+  },
+  "keywords": [
+    "x5",
+    "sdk"
+  ],
+  "author": "builden <billdeng@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "better-console": "^0.2.4",
+    "lodash": "^3.10.1",
+    "moment": "^2.10.6",
+    "underscore.string": "^3.2.2"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-istanbul": "^0.10.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "gulp-mocha": "^2.1.3",
+    "mocha": "^2.2.5"
+  }
+}
