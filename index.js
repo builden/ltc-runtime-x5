@@ -2,13 +2,7 @@ var cfg = require('./lib/cfg.js');
 var x5_getLoginInfo = require('./lib/get-login-info.js');
 var price = require('./lib/get-price.js');
 var pay = require('./lib/get-pay.js');
-
-/*
-// 腾讯为游戏分配的appid
-var X5_APPID = '8601554899';
-var X5_APP_KEY = 'FsVDCSD8t7fhkcfm'; // [cp身份秘钥], 用于签名
-var X5_TRANSFER_KEY = 'a46Qx5Kn1ocaLQuS'; // [cp传输密钥], 用于加密解密传输的data数据
-*/
+var util = require('./lib/util.js');
 
 exports.init = function (appid, appkey, transKey) {
   cfg.X5_APPID = appid;
@@ -34,4 +28,8 @@ exports.getPriceResponse = function (json) {
 
 exports.getPayResponse = function (json) {
   return pay.x5_pay_response(json);
+};
+
+exports.getRandomString = function() {
+  return util.getRandomString();
 };

@@ -1,6 +1,6 @@
 {
   "name": "ltc-runtime-x5",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ltc-rank for record rank info",
   "main": "index.js",
   "scripts": {
